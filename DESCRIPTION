@@ -1,0 +1,54 @@
+Package: tidypm
+Title: Tidy Tools for Multi-Asset Portfolio Management
+Version: 0.2.0
+Authors@R: c(
+    person("Sebastian", "Stöckl", email = "sebastian.stoeckl@uni.li",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2984-1462")))
+Description: Tools for multi-asset portfolio management that stand beside
+    'PortfolioAnalytics' rather than wrapping it. Included are a tibble
+    interface to the wide return matrices it expects, reproducible access to
+    public data through a pinned cutoff date and a local cache, portfolio
+    universes and screens, total returns for constant-maturity government and
+    credit bonds built from yields, a strategy register with an out-of-sample
+    backtest that charges trading costs by asset class, and per-period
+    diagnostics reporting which dates of a rolling optimization produced a
+    portfolio and what went wrong at the others. A simulated multi-asset market
+    is shipped with the package so that every example runs offline. Companion
+    package to the book "Tidy Asset Allocation in R".
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.2)
+Imports:
+    cli,
+    dplyr,
+    PerformanceAnalytics,
+    parallel,
+    PortfolioAnalytics (>= 2.1.2),
+    rlang,
+    stats,
+    tibble,
+    tidyr,
+    utils,
+    xts,
+    zoo
+Suggests:
+    curl,
+    doParallel,
+    FFdownload,
+    foreach,
+    quadprog,
+    ROI,
+    ROI.plugin.glpk,
+    ROI.plugin.quadprog,
+    testthat (>= 3.0.0),
+    tidyquant,
+    withr
+Config/testthat/edition: 3
+URL: https://github.com/sstoeckl/tidypm
+BugReports: https://github.com/sstoeckl/tidypm/issues
+Config/roxygen2/version: 8.1.0
+LazyData: true

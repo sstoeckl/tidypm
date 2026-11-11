@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+inst/doc
+docs/
+
+# The raw export carries the source calendar and is read from ../simulated_data
+# at import; it is never copied into the package repository.
+data-raw/simulated_market/
+data-raw/calendar.local.R

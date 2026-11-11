@@ -1,0 +1,14 @@
+# Normalise line endings. Development happens on Windows, the heavy compute runs
+# on a Linux server, and R and Quarto both care -- without this, every file that
+# crosses gets flagged as fully modified.
+* text=auto eol=lf
+
+# Binary: never touch.
+*.png    binary
+*.jpg    binary
+*.pdf    binary
+*.parquet binary
+*.rds    binary
+*.RData  binary
+*.woff2  binary
+*.zip    binary
